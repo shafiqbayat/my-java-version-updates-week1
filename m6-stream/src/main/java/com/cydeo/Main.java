@@ -29,6 +29,9 @@ public class Main {
         Stream<Course> myCourseStream = myCourses.stream();
 
 
+      //  myCourseStream.reduce("java",100);
+
+
 
 
 
