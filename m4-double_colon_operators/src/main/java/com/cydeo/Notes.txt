@@ -4,7 +4,7 @@ Remember three things
 
 1.	 if you're referencing your Lambda expression with one of the methods, just need to check if the method is static method directly reference with the class name
 
-2.	second rule is if the method is instance method or either you can say new calculator basically you can mention object
+2.	second rule is if the method is instance method or either you can say new then functional interface, basically you can mention object
 
 3.	if your functional interface excepting as a parameter of the class name then you don't need to mention your name as keyword you can just write class name like how you call static
 
