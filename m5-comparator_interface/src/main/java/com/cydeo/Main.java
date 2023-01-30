@@ -14,6 +14,10 @@ public class Main {
 
         System.out.println(list);
 
+        Collections.sort(list, new MyComparator());
+        System.out.println(list);
+
+        Collections.sort(list, ((o1, o2) -> (o1 > o2) ? -1 : (o1 < o2) ? 1 : 0));
 
 
     }
