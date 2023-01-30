@@ -1,6 +1,5 @@
 package com.cydeo;
-
-@FunctionalInterface
+@java.lang.FunctionalInterface
 public interface Sorting {
     public void sort();
 }
