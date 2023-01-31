@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class Main {
+public class CreateStream {
 
     public static void main(String[] args) {
 
@@ -23,13 +23,17 @@ public class Main {
 
         List<Course> myCourses = Arrays.asList(
           new Course("java", 100),
-          new Course("DS",200),
-          new Course("MS",102));
+          new Course("DS",366),
+          new Course("MS",122));
 
         Stream<Course> myCourseStream = myCourses.stream();
 
 
-      //  myCourseStream.reduce("java",100);
+
+//        Creating stream values
+
+        Stream<Integer> stream = Stream.of(10,55,44,88,77);
+
 
 
 
