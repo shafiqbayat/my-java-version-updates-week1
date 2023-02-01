@@ -1,6 +1,7 @@
 package com.cydeo.task1;
 
 import java.util.Comparator;
+import java.util.stream.Stream;
 
 public class DishTask {
 
@@ -39,6 +40,16 @@ public class DishTask {
                 .filter(dish -> dish.getCalories()<400)
                 .sorted(Comparator.comparing(Dish::getCalories).reversed())
                 .map(Dish::getName).forEach(System.out::println);
+
+//               Dish dish = new Dish();
+//               new Dish.getCalories();
+
+        String str = "Apple";
+
+        Stream<Dish> dishStream = DishData.getAll().stream();
+
+
+
 
 
 
