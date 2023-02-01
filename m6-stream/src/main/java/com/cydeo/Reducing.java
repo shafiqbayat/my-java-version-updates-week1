@@ -39,6 +39,15 @@ public class Reducing {
         System.out.println("sum = " + sum.get());
 
 
+        System.out.println("Count");
+        long dishCount = DishData.getAll().stream().count();
+
+        System.out.println(dishCount);
+
+
+
+
+
 
 
 
