@@ -29,7 +29,7 @@ public class TakeWhileDropWhile {
 
     public static List<String> getStocksBelowFiveHundredFilter(List<Stock> stocks){
         return stocks.stream()
-                .peek(stock -> System.out.println("Filter proccessing : " + stock))
+                .peek(stock -> System.out.println("Filter processing : " + stock))
                 .filter(TakeWhileDropWhile::isStockLessThanFiveHundred)
                 .map(Stock::getName)
                 .collect(Collectors.toList());
@@ -37,7 +37,7 @@ public class TakeWhileDropWhile {
 
     public static List<String> getStocksBelowFiveHundred(List<Stock> stocks){
         return stocks.stream()
-                .peek(stock -> System.out.println("takeWhile proccessing : " + stock))
+                .peek(stock -> System.out.println("takeWhile processing : " + stock))
                 .takeWhile(TakeWhileDropWhile::isStockLessThanFiveHundred)
                 .map(Stock::getName)
                 .collect(Collectors.toList());
@@ -45,7 +45,7 @@ public class TakeWhileDropWhile {
 
     public static List<String> getStocksAboveFiveHundred(List<Stock> stocks){
         return stocks.stream()
-                .peek(stock -> System.out.println("dropWhile proccessing : " + stock))
+                .peek(stock -> System.out.println("dropWhile processing : " + stock))
                 .dropWhile(TakeWhileDropWhile::isStockLessThanFiveHundred)
                 .map(Stock::getName)
                 .collect(Collectors.toList());
